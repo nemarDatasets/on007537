@@ -1,31 +1,76 @@
 {
   "version": "2.0",
-  "dataset_id": "on007537",
-  "source": "openneuro",
-  "source_id": "ds007537",
+  "pipeline_stage": "validated",
   "title": "A multimodal dataset of EEG, eye-tracking, and physiological signals during smartphone interaction",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Prakash Mishra": {},
     "Tapan K. Gandhi": {},
     "Saurabh R. Gandhi": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds007537.v1.0.0",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on007537",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on007537",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.0.0",
-  "recording_modality": [
+  "resource_type_general": "Dataset",
+  "modalities": [
     "beh",
     "eeg"
   ],
-  "datatypes": [
-    "beh",
-    "eeg"
-  ]
+  "resource_type_specific": "Neuroimaging Dataset",
+  "sizes": [
+    "4.3 GB (87 files)"
+  ],
+  "formats": [
+    ".eeg",
+    ".gz",
+    ".json",
+    ".md",
+    ".tsv",
+    ".vhdr",
+    ".vmrk",
+    ".yml"
+  ],
+  "description": "A multimodal neurophysiological dataset comprising simultaneous electroencephalography, eye-tracking, photoplethysmography, and galvanic skin response recordings from 23 healthy adults during naturalistic smartphone interaction and standardized video viewing. The dataset employs hardware-based synchronization to enable precise temporal alignment across modalities and includes detailed event markers for experimental conditions.",
+  "methods_description": "Data were acquired using a 64-channel EEG cap and head-mounted eye tracker with concurrent photoplethysmography and galvanic skin response recordings. Participants completed two conditions: a 10-minute smartphone interaction task using personal devices and a 5-minute standardized video viewing task. Hardware-based transistor-transistor logic synchronization pulses were delivered at session onset/offset and at 20-second intervals to enable cross-modal temporal alignment.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "eye tracking"
+    },
+    {
+      "term": "Photoplethysmography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D017156"
+    },
+    {
+      "term": "galvanic skin response"
+    },
+    {
+      "term": "multimodal neuroimaging"
+    },
+    {
+      "term": "smartphone interaction"
+    },
+    {
+      "term": "physiological signals"
+    }
+  ],
+  "source_hash": "f2601bc94941ea155639472f417298d3d9392195078ef3c08e02da35c89d7b41"
 }

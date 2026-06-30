@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "A multimodal dataset of EEG, eye-tracking, and physiological signals during smartphone interaction",
+  "description": "This multimodal dataset comprises simultaneous electroencephalography (EEG), eye-tracking, photoplethysmography (PPG), and galvanic skin response (GSR) recordings from 23 healthy adult participants during two experimental conditions: naturalistic smartphone interaction and standardized video viewing. Hardware-based TTL synchronization enables precise temporal alignment across all physiological modalities, facilitating investigation of neural and physiological responses to digital device interaction.",
+  "methods_description": "Data were acquired using a 64-channel EEG cap and head-mounted eye tracker with concurrent PPG and GSR recordings. Two experimental conditions were implemented: a 10-minute smartphone interaction condition using participants' personal devices, and a 5-minute video viewing condition. Hardware-based TTL synchronization pulses (five pulses at ~1-second intervals marking session boundaries, with additional pulses every 20 seconds) were embedded in both EEG and eye-tracking data streams to enable cross-modal temporal alignment.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -9,44 +11,6 @@
     "Tapan K. Gandhi": {},
     "Saurabh R. Gandhi": {}
   },
-  "related_identifiers": [
-    {
-      "identifier": "10.18112/openneuro.ds007537.v1.0.0",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
-    },
-    {
-      "identifier": "https://github.com/nemarDatasets/on007537",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "https://nemar.org/dataset/on007537",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    }
-  ],
-  "resource_type_general": "Dataset",
-  "modalities": [
-    "beh",
-    "eeg"
-  ],
-  "resource_type_specific": "Neuroimaging Dataset",
-  "sizes": [
-    "4.3 GB (87 files)"
-  ],
-  "formats": [
-    ".eeg",
-    ".gz",
-    ".json",
-    ".md",
-    ".tsv",
-    ".vhdr",
-    ".vmrk",
-    ".yml"
-  ],
-  "description": "A multimodal neurophysiological dataset comprising simultaneous electroencephalography, eye-tracking, photoplethysmography, and galvanic skin response recordings from 23 healthy adults during naturalistic smartphone interaction and standardized video viewing. The dataset employs hardware-based synchronization to enable precise temporal alignment across modalities and includes detailed event markers for experimental conditions.",
-  "methods_description": "Data were acquired using a 64-channel EEG cap and head-mounted eye tracker with concurrent photoplethysmography and galvanic skin response recordings. Participants completed two conditions: a 10-minute smartphone interaction task using personal devices and a 5-minute standardized video viewing task. Hardware-based transistor-transistor logic synchronization pulses were delivered at session onset/offset and at 20-second intervals to enable cross-modal temporal alignment.",
   "keywords": [
     {
       "term": "EEG"
@@ -72,5 +36,41 @@
       "term": "physiological signals"
     }
   ],
-  "source_hash": "f2601bc94941ea155639472f417298d3d9392195078ef3c08e02da35c89d7b41"
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/nemarDatasets/on007537",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on007537",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds007537.v1.0.0",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    }
+  ],
+  "resource_type_general": "Dataset",
+  "resource_type_specific": "Neuroimaging Dataset",
+  "modalities": [
+    "beh",
+    "eeg"
+  ],
+  "sizes": [
+    "6.6 GB (95 files)"
+  ],
+  "formats": [
+    ".eeg",
+    ".gz",
+    ".json",
+    ".md",
+    ".tsv",
+    ".vhdr",
+    ".vmrk",
+    ".yml"
+  ],
+  "source_hash": "e942196cbb45d48f57404c7e78ad1bbe1c9a780b6ed3cf98df186b5d8f8a3b55"
 }

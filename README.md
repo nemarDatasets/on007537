@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on007537-blue)](https://doi.org/10.82901/nemar.on007537)
+
 This dataset contains multimodal physiological recordings acquired during smartphone interaction and video viewing conditions. The dataset includes simultaneous electroencephalography (EEG), eye-tracking, photoplethysmography (PPG), and galvanic skin response (GSR) signals.
 
 ## **Experimental Protocol**

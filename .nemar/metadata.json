@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "A multimodal dataset of EEG, eye-tracking, and physiological signals during smartphone interaction",
-  "description": "This multimodal dataset comprises simultaneous electroencephalography (EEG), eye-tracking, photoplethysmography (PPG), and galvanic skin response (GSR) recordings from 23 healthy adult participants during two experimental conditions: naturalistic smartphone interaction and standardized video viewing. Hardware-based TTL synchronization enables precise temporal alignment across all physiological modalities, facilitating investigation of neural and physiological responses to digital device interaction.",
-  "methods_description": "Data were acquired using a 64-channel EEG cap and head-mounted eye tracker with concurrent PPG and GSR recordings. Two experimental conditions were implemented: a 10-minute smartphone interaction condition using participants' personal devices, and a 5-minute video viewing condition. Hardware-based TTL synchronization pulses (five pulses at ~1-second intervals marking session boundaries, with additional pulses every 20 seconds) were embedded in both EEG and eye-tracking data streams to enable cross-modal temporal alignment.",
+  "description": "This dataset comprises multimodal physiological recordings from 23 healthy adult participants collected during naturalistic smartphone interaction and standardized video viewing conditions. Simultaneous EEG (64-channel), eye-tracking, photoplethysmography (PPG), and galvanic skin response (GSR) data were acquired, synchronized via hardware TTL pulses. The dataset supports research into physiological and neural correlates of smartphone use and passive video viewing.",
+  "methods_description": "Participants wore a 64-channel EEG cap and head-mounted eye tracker while simultaneous PPG and GSR were recorded. Two conditions were tested: a 10-minute naturalistic smartphone interaction task and a 5-minute standardized video viewing task. Hardware TTL synchronization pulses (five pulses at ~1-second intervals for session boundaries, additional pulses every 20 seconds) were embedded in EEG and eye-tracking streams for cross-modal temporal alignment. EEG event markers denoted condition onset/offset (S12/S13 for Smartphone Monitor, S22/S23 for Video Monitor).",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -16,7 +16,7 @@
       "term": "EEG"
     },
     {
-      "term": "eye tracking"
+      "term": "eye-tracking"
     },
     {
       "term": "Photoplethysmography",
@@ -24,16 +24,21 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D017156"
     },
     {
-      "term": "galvanic skin response"
-    },
-    {
-      "term": "multimodal neuroimaging"
+      "term": "Galvanic Skin Response",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D005712"
     },
     {
       "term": "smartphone interaction"
     },
     {
-      "term": "physiological signals"
+      "term": "multimodal physiological signals"
+    },
+    {
+      "term": "TTL synchronization"
+    },
+    {
+      "term": "video viewing task"
     }
   ],
   "related_identifiers": [

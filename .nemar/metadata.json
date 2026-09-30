@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "A multimodal dataset of EEG, eye-tracking, and physiological signals during smartphone interaction",
-  "description": "This dataset comprises multimodal physiological recordings from 23 healthy adult participants collected during naturalistic smartphone interaction and standardized video viewing conditions. Simultaneous EEG (64-channel), eye-tracking, photoplethysmography (PPG), and galvanic skin response (GSR) data were acquired, synchronized via hardware TTL pulses. The dataset supports research into physiological and neural correlates of smartphone use and passive video viewing.",
-  "methods_description": "Participants wore a 64-channel EEG cap and head-mounted eye tracker while simultaneous PPG and GSR were recorded. Two conditions were tested: a 10-minute naturalistic smartphone interaction task and a 5-minute standardized video viewing task. Hardware TTL synchronization pulses (five pulses at ~1-second intervals for session boundaries, additional pulses every 20 seconds) were embedded in EEG and eye-tracking streams for cross-modal temporal alignment. EEG event markers denoted condition onset/offset (S12/S13 for Smartphone Monitor, S22/S23 for Video Monitor).",
+  "description": "A multimodal dataset of simultaneous 64-channel EEG, head-mounted eye-tracking, photoplethysmography (PPG), and galvanic skin response (GSR) recordings from 23 healthy adults. Participants took part in a naturalistic smartphone use condition and a standardized video viewing condition. Hardware TTL pulses synchronize the EEG and eye-tracking streams for temporal alignment across modalities.",
+  "methods_description": "Participants wore a 64-channel EEG cap and a head-mounted eye tracker with simultaneous PPG and GSR recording. They completed a 10-minute free smartphone use condition on their personal devices and a 5-minute standardized video viewing condition on a monitor. Session boundaries were marked with TTL pulses (five pulses at ~1 s intervals, plus pulses every 20 s) embedded in both the EEG and eye-tracking streams.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -16,29 +16,19 @@
       "term": "EEG"
     },
     {
-      "term": "eye-tracking"
+      "term": "eye tracking"
     },
     {
-      "term": "Photoplethysmography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D017156"
+      "term": "photoplethysmography"
     },
     {
-      "term": "Galvanic Skin Response",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D005712"
+      "term": "galvanic skin response"
     },
     {
-      "term": "smartphone interaction"
+      "term": "smartphone use"
     },
     {
-      "term": "multimodal physiological signals"
-    },
-    {
-      "term": "TTL synchronization"
-    },
-    {
-      "term": "video viewing task"
+      "term": "multimodal physiological recording"
     }
   ],
   "related_identifiers": [
@@ -65,7 +55,7 @@
     "eeg"
   ],
   "sizes": [
-    "6.6 GB (95 files)"
+    "6.12 GB (95 files)"
   ],
   "formats": [
     ".eeg",
